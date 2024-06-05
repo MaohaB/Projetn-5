@@ -1,0 +1,44 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;       
+    align-items: center;
+    background-color: pink;
+}
+.header-nav {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 34.22px;
+}
+.logo {
+    height: 50px;
+}
+nav a {
+    padding: 0 8px;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 34.22px;
+    text-decoration: none;
+    color: black;
+&:hover, &:focus {
+text-decoration: underline;
+}
+}
+@media (max-width: 576px) {
+    .header {
+        background-color: red;
+        padding: 0;
+      }
+      .header-nav {
+        font-family: Montserrat;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 34.22px;
+    }
+    .logo {
+        height: 20px;
+    }
+  }
+ 
