@@ -1,36 +1,26 @@
-import './App.css'
+import {Route, Routes } from 'react-router-dom';
+import Home from './pages/Home';
+import About from './pages/About/';
 import Header from "./components/Header";
-import { createBrowserRouter, Link, NavLink, RouterProvider } from 'react-router-dom';
-
-// const router = createBrowserRouter([
-// {
-// path: '/',
-// element: <div> aceuil
-// <nav>
-// <NavLink to="/blog" >blog</NavLink>
-// <NavLink to="/contact" >contact</NavLink>
-// </nav>
-// </div>
-// },
-// {  path: '/blog',
-// element: <div>blog<nav>
-// <NavLink to="/blog" >blog</NavLink>
-// <NavLink to="/contact" >contact</NavLink>
-// </nav></div>
-// },
-// {  path: '/contact',
-// element: <div>contact<nav>
-// <NavLink to="/blog" >blog</NavLink>
-// <NavLink to="/contact" >contact</NavLink>
-// </nav> </div>
-// }
-// ])
+import Footer from "./components/Footer";
 function App() {
   return (
     <div>
+      <div className="main"> 
       <Header/>
+      <main>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+      </main>
+
+      </div>
+    
+      <Footer/>
     </div>
   )
 }
 
 export default App;
+
