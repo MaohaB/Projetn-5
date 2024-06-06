@@ -1,18 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-.html {
+html {
     width: 100%;
+    font-family: Montserrat;
 }
-.body {
-    padding: 10px 50px;
-    min-width: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-.footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
+
+// .footer {
+//     position: absolute;
+//     bottom: 0;
+//     width: 100%;
+// }
 @media (max-width: 576px) {
     .body {
         padding: 10px;
