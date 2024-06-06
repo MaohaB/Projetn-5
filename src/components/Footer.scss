@@ -1,0 +1,36 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 0;       
+    align-items: center;
+    background-color: black;
+}
+
+.footer p {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 34.22px;
+    color: white;
+    display: flex;
+    padding: 0 20px;
+    justify-content: center;
+}
+.footer .mobile {
+  display: none;
+}
+
+@media (max-width: 576px) {
+    .header {
+        padding: 0;
+      }
+    .footer .mobile {
+      display: flex;
+    }
+    .footer .desktop {
+      display: none;
+    }
+
+  }
+ 
