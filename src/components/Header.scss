@@ -16,10 +16,11 @@ nav a {
     line-height: 34.22px;
     text-decoration: none;
     color: black;
-&:hover, &:focus {
-text-decoration: underline;
+&:hover, &.active{
+text-decoration: solid underline 2px;
 }
 }
+
 @media (max-width: 576px) {
     .header {
         padding: 5px 10px;
