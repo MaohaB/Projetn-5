@@ -1,5 +1,5 @@
-.banner {
-  background-image: url("../images/banner1.png");
+.bannerabout {
+  background-image: url("../images/banner2.png");
   background-size: cover;
   background-color: rgba(0, 0, 0, 0.55);
   background-blend-mode: multiply ;
@@ -28,7 +28,7 @@
     .mobile {
         display: flex;
       }
-      .banner {
+      .bannerabout {
         justify-content: start;
         padding-left: 1rem;
         border-radius: 10px;

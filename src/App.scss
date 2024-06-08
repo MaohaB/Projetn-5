@@ -3,13 +3,16 @@ html {
     width: 100%;
     font-family: Montserrat;
 }
-.Home {
-    padding-inline: 30px;
+.Home, .About {
+    padding-inline: 20px;
 }
 
 @media (max-width: 576px) {
 
     .Home {
+        padding-inline: 0;
+    }
+    .About {
         padding-inline: 0;
     }
   }

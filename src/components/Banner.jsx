@@ -1,5 +1,4 @@
 import './Banner.scss'
-import logo from "../images/LOGOblanc.png";
 const Banner = () => {
     return (
         <div className="banner-container">    
