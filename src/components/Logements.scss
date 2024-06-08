@@ -3,8 +3,6 @@
     min-height: 20vh;
     border-radius: 20px;
     padding: 0 20px;
-
-    margin: 0 10px 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -13,6 +11,7 @@
     padding: 1rem;;
     flex-wrap: wrap;
     justify-items: start;
+    margin-bottom: 20px;
 }
 .Logementscards {
     background-color: #FF6060;
@@ -38,7 +37,7 @@
       //flex-direction: column;
     }
     .Logementscards {
-        flex-basis: 80%;
+        flex-basis: 90%;
         justify-content: space-around;
         justify-content: start;
     }
