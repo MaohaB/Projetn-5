@@ -1,9 +1,11 @@
+import { Link } from 'react-router-dom'
 const Logementscards = () => {
     return (
-        <div className="Logementscards">
-            <div className="logementstitle">
+        <Link to="/logement" className="Logementscards">
+        <div className="logementstitle">
         Titre de la <br></br> location   
-        </div></div>
+        </div>
+        </Link>
     );
 } ;
 
