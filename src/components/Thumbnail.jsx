@@ -15,7 +15,7 @@ export default Thumbnail;  */}
 
 const Thumbnail = ({id, title, cover}) => {
     return (
-        <Link to={"/logement/${id}"} className="Thumb" key={id}>
+        <Link to={`/logement/${id}`} className="Thumb" key={id}>
             <img src={cover} alt={title} />
             <h3>{title}</h3>
         </Link>

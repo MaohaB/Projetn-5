@@ -1,0 +1,143 @@
+.appartementtitle {
+  color: #ff6060;
+  font-family: Montserrat;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142.6%; /* 51.336px */
+}
+.location {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142.6%; /* 25.668px */
+}
+.tags span {
+  background-color: #ff6060;
+  border-radius: 20px;
+  padding: 8px 15px;
+  margin-right: 3px;
+  color: #ffffff;
+  vertical-align: middle;
+  color: #fff;
+  text-align: center;
+
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 142.6%; /* 19.964px */
+}
+.tags {
+  margin-top: 10px;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+.hebergeur {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.owner {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.owner-name {
+  color: #ff6060;
+  text-align: right;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142.6%; /* 25.668px */
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+}
+.owner-picture img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+.infoflex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.stars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #E3E3E3;
+    font-size: 24px;
+    margin: 5px;
+}
+.stars span {
+    margin: 2px;
+}
+.fullstars {
+
+    color: #ff6060;
+}
+
+
+
+
+
+
+
+@media (max-width: 576px) {
+    .infoflex {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .appartementtitle {
+
+        font-size: 25px;
+
+      }
+      .location {
+        font-size: 15px;
+
+      }
+      .tags span {
+        padding: 5px 12px;
+        margin-right: 3px;
+    
+        font-size: 12px;
+
+      }
+      .tags span {
+        margin-bottom: 5px;
+      }
+    
+    .hebergeur {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .stars {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #E3E3E3;
+        font-size: 14px;
+        margin: 5px;
+    }
+    .owner-name {
+        font-size: 14px;
+        font-weight: 500;
+        display: flex;
+        flex-direction: column;
+        margin: 15px;
+      }
+      .owner-picture img {
+        width: 52px;
+        height: 52px;
+        border-radius: 50%;
+        margin: 5px;
+      }
+ }

@@ -1,12 +1,12 @@
 .eror {
-  display: flex;
-  flex-direction: column;
-  font-family: Montserrat;
-  align-items: center;
-  justify-content: space-around;
-  margin-bottom: 50px;
-  }
-  
+display: flex;
+flex-direction: column;
+font-family: Montserrat;
+align-items: center;
+justify-content: space-around;
+margin-bottom: 50px;
+}
+
 .nb404 {
  color: #FF6060;
  font-family: Montserrat;
@@ -27,6 +27,7 @@ text-align: center;
 margin-top: 40px;
 text-decoration: none;
 color: black;
+
     &:hover, &:focus {
     text-decoration: underline;
      }
