@@ -66,6 +66,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin: 20px;
 }
 
 .stars {
@@ -80,12 +81,20 @@
     margin: 2px;
 }
 .fullstars {
-
     color: #ff6060;
 }
 
-
-
+.collapse-flex {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding-inline: 20px;
+}
+.equipment-list {
+  display: flex;
+  flex-direction: column;
+}
 
 
 
@@ -140,4 +149,8 @@
         border-radius: 50%;
         margin: 5px;
       }
+      .collapse-flex {
+        flex-direction: column;
+      }
+      
  }
