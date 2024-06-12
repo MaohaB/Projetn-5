@@ -4,29 +4,32 @@ flex-direction: column;
 align-items: flex-start;
 margin-bottom: 2rem;
 justify-content: center;
-
+}
+.collapse-flex {
+    overflow-y: clip;
+    margin: 30px 0px;
 }
 .Collapse-container {
     justify-content: space-between;
     display: flex;
     padding-inline: 0;
-    margin: 30px 0px;
     width: 45%;
     align-items: baseline;
 }
 .Collapse-container-about {
     justify-content: center;
     display: flex;
-    padding-right: 5%;
-    margin: 30px 0px;
-    width: 100%
+    padding-right: 2%;
+    width: 86%;
+    overflow-y: clip;
 }
 
 .Collapse-logement {
 width: 100%;
 }
+
 .Collapse-about {
-width: 90%;
+width: 100%;
 }
 .collapsetitle {
 background-color: #FF6060;
@@ -41,6 +44,7 @@ line-height: 142.6%; /* 25.668px */
 
 display: flex;
 justify-content: space-between;
+cursor: pointer;
 }
 .collapsecontent {
 background-color: #f6f6f6;
@@ -52,23 +56,65 @@ font-style: normal;
 font-weight: 500;
 line-height: 142.6%; /* 25.668px */
 
-min-height: 200px;
-  display: flex;
-  align-items: stretch;
+
+display: flex;
+align-items: stretch;
 }
+
 .fa-chevron-down {
     font-size: 150%;
-    
-    cursor: pointer;
-}
-.chevron {
     align-items: center;
-  display: flex;
+    display: flex;
 }
 
+ul {
+    padding-inline-start: 2px
+}
 
 /* Animations */
+.chevron-down {
+    -moz-transition: all .2s linear;
+        -webkit-transition: all .2s linear;
+        transition: all .2s linear;
 
+        -moz-transform:rotate(0deg);
+        -webkit-transform:rotate(0deg);
+        transform:rotate(0deg);
+}
+.chevron-up {
+-moz-transition: all .2s linear;
+        -webkit-transition: all .2s linear;
+        transition: all .2s linear;
+
+        -moz-transform:rotate(1800deg);
+        -webkit-transform:rotate(180deg);
+        transform:rotate(180deg);
+}
+
+.hidden {
+    -moz-transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+
+    -moz-transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+
+    z-index: -1;
+    margin-top: -100px;
+}
+.visible {
+    -moz-transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+
+    -moz-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+
+    z-index: -1;
+    width: inherit;
+}
 
 
 
@@ -82,5 +128,12 @@ min-height: 200px;
         width: 70%;
         padding-right: 8%;
         }
+    .hidden {
+            margin-top: -200px;
+    }
+    .Collapse-logement {
+        overflow-y: clip;
+        min-height: 75px;
+    }
   }
 
