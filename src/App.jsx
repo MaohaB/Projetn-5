@@ -18,6 +18,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="logement/:id" element={<Logements />} />
         <Route path="*" element={<Error />} />
+        <Route path="/error" element={<Error />} />
       </Routes>
       </main>
 

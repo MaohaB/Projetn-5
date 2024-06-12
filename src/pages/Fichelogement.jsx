@@ -25,8 +25,9 @@ const Logement = () => {
             <div className="infoflex">
                 <Situation title={logement.title} 
                 location={logement.location} 
-                tags={logement.tags} />
-                <Host  host={host} firstname={firstname} lastname={lastname} picture={host.picture} rating={logement.rating} />
+                tags={logement.tags}
+                 />
+                <Host  title={logement.title} host={host} firstname={firstname} lastname={lastname} picture={host.picture} rating={logement.rating} />
             </div>
              id : {id}
              nom : {firstname}
