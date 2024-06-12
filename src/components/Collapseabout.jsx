@@ -2,7 +2,7 @@ import "./collapse.scss";
 import React from "react";
 const Collapse = (props) => {
   return (
-    <div className="Collapse-container">
+    <div className="Collapse-container-about">
       <div className="Collapse Collapse-about">
         <div className="collapsetitle">
           <span>{props.title}</span>
