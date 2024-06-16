@@ -26,6 +26,8 @@ justify-content: center;
 
 .Collapse-logement {
 width: 100%;
+overflow: hidden;
+padding-inline: 2rem;
 }
 
 .Collapse-about {
@@ -68,7 +70,8 @@ align-items: stretch;
 }
 
 ul {
-    padding-inline-start: 2px
+    padding-inline-start: 2px;
+    margin: 0;
 }
 
 /* Animations */
@@ -121,7 +124,7 @@ ul {
 @media (max-width: 576px) {
 
     .Collapse-container {
-    width: 90%;
+    width: 100%;
     justify-content: center;
     }
     .Collapse-container-about  {
