@@ -8,7 +8,7 @@ const Host = ({host, firstname, lastname, rating, picture, title}) => {
             </div>
              <div className="stars">
                 {[1,2,3,4,5].map((index) => (
-                    <span key={[title+picture]} className={rating > index ? "fullstars" : ""}><i className="fa-solid fa-star"></i></span>
+                    <span key={index} className={rating > index ? "fullstars" : ""}><i className="fa-solid fa-star"></i></span>
                 ))}
                 </div>
         </div>
