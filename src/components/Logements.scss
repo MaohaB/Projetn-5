@@ -18,25 +18,33 @@
     margin-bottom: 20px;
 }
 .Thumb {
-    background-color: #FF6060;
-    background: linear-gradient(to top, #ce4e4e, #FF6060);
+    position: relative;
     height: 300px;
-    flex-basis: 30%;
-    border-radius: 10px;
+    width: 30%;
+    border-radius: 20px;
 
     text-decoration: none;
     display: flex;
     flex-direction: column;
+    &::after{
+        content: '';
+        z-index: 10;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        height: 100%;
+        border-radius: 20px;
+        background: linear-gradient(180deg, rgba(0,0,0,0) 0% , rgba(0, 0, 0, 0.5) 100%);
+    }
 }
 .Thumb img {
 object-fit: cover;
 display: flex;
 align-self: center;
-border-radius: 20px 20px 0 0;
-padding: 10px;
-height: 80%;
-width: 96%;
-
+border-radius: 20px;
+min-height: 100%;
+width: 100%;
 }
 
 .Thumb h3 {
@@ -44,22 +52,27 @@ width: 96%;
     font-size: 16px;
     font-weight: 600;
 
+    z-index: 20;
     text-align: start;
     color: white;
     text-decoration: none;
+
+    position: relative;
+    bottom: 90px;
+    padding: 15px;
 }
 @media (max-width: 576px) {
     .Logementscards {
       background-color: white;
       //flex-direction: column;
+      width: 90%;
     }
     .Thumb {
-        flex-basis: 90%;
-        justify-content: space-around;
+        width: 90%;
         justify-content: start;
     }
     .Thumb img {
-        width: 95%;
+        width: 100%;
         }
   }
  
