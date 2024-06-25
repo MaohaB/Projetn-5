@@ -1,6 +1,10 @@
 .Logement-page {
     margin-inline: 20px;
 }
+.container-logements {
+    display: flex;
+    justify-content: center;
+}
 .Logementscards 
     {
     background-color: #F6F6F6;
@@ -58,7 +62,7 @@ width: 100%;
     text-decoration: none;
 
     position: relative;
-    bottom: 90px;
+    bottom: 110px;
     padding: 15px;
 }
 @media (max-width: 576px) {

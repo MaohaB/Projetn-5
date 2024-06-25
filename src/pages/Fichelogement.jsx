@@ -41,10 +41,6 @@ const Logement = () => {
             ))}/>
             </div>
             
-             id : {id}
-             nom : {firstname}
-
-                
         </div>
     );
 } ;

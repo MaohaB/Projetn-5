@@ -7,7 +7,6 @@ import Thumb from "../components/Thumbnail";
 const Home = () => {
     return (
         <div className="Home">
-           home  
            <Banner/>
            <Logements/>
             </div>
