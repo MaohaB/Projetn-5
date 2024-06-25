@@ -1,8 +1,9 @@
-
-const Carrousel = () => {
+import Logement from "../pages/Fichelogement";
+import "./carroussel.scss"
+const Carrousel = ({imgUrl}) => {
     return (
         <div className="Carrousel">
-            Carrousel
+            <img src={imgUrl} alt=""/>
         </div>
     );
 } ;
