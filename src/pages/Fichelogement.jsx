@@ -25,7 +25,7 @@ const Logement = () => {
 
     return (
         <div className="Logement-page">
-            <Carrousel imgUrl={logement.cover}/>
+            <Carrousel imgUrl={logement.cover} pictures={logement.pictures}/>
             <div className="infoflex">
                 <Situation title={logement.title} 
                 location={logement.location} 
