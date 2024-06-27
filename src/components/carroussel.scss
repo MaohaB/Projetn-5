@@ -12,7 +12,12 @@ height: 415px;
 
     inset: 0;
     position: absolute;
+    opacity: 0;
 }
+& .show-picture {
+    opacity: 1;
+}
+
 & .slider-arrows {
     z-index: 20;
 position: relative;
