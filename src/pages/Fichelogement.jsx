@@ -1,7 +1,7 @@
 import React, { useEffect } from "react"
 import { useParams, Navigate } from "react-router-dom";
 import logements from "../data/logements.json";
-import "../components/Fichelogement.scss"
+import "./Fichelogement.scss"
 
 
 import Carrousel from "../components/Carrousel"

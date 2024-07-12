@@ -35,8 +35,9 @@ const Carrousel = ({pictures}) => {
             </div>:<span></span>}
             </div>
             
-            <div className="nbImg"><span>
-                {currentPicture + 1} / {pictures.length}</span></div>
+            <div className="nbImg">
+            {pictures.length > 1 ?<span>{currentPicture + 1} / {pictures.length}</span>:<span></span>}
+            </div>
             {pictures.map((pic, i) => ( 
             <img key={pic} src={pic} alt="" className={getClassName(i)} />
             ))}

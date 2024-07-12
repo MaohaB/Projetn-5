@@ -24,6 +24,7 @@ text-decoration: solid underline 2px;
 @media (max-width: 576px) {
     nav a {
         font-size: 15px;
+        text-transform: uppercase;
     }
     .logo {
         height: 32px;
